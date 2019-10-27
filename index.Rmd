@@ -1,9 +1,6 @@
 ---
 title: "Kylie Wheelock Riley"
-output: 
-    html_document:
-      toc: true
-      toc_float: true
+output: html_document
  
 ---
 

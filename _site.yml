@@ -13,4 +13,4 @@ navbar:
       href: https://www.linkedin.com/in/kylie-wheelock-mph-a5966680/
 output:
   html_document:
-    theme: cerulean
+    theme: flatly
