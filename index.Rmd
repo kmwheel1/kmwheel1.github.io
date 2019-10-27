@@ -10,21 +10,24 @@ output:
 #### Mailman School of Public Health
 #### Columbia University
 
-![](images/picture_reformatted.JPG)
+<img src="images/picture_reformatted.jpg" style="width:75%" ALIGN="center">
+
 
 Kylie received a BS in Environmental Science and Technology from [University of Maryland, College Park](https://umd.edu/) in 2012 and an MPH in Environmental Health Sciences from [Mailman School of Public Health](https://www.mailman.columbia.edu/) at Columbia University in 2015.  
 
 
+You can find her CV [here](CV.html). 
+
+
 #### Contact Information
-
 Kylie Wheelock Riley
-
+<br>
 [Department of Environmental Health Sciences](https://www.mailman.columbia.edu/become-student/departments/environmental-health-sciences-ehs)
-
+<br>
 [Columbia Mailman School of Public Health](https://www.mailman.columbia.edu/)
-
+<br>
 722 West 168th Street
-
+<br>
 New York, New York 10032
-
+<br>
 Email: kmw2189@cumc.columbia.edu
