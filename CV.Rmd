@@ -3,4 +3,4 @@ title: "CV"
 output: html_document
 ---
 
-### Below please find my CV
+### Please find my CV [here](CV/Wheelock_Riley_main.pdf)
