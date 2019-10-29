@@ -8,17 +8,22 @@ output: html_document
 ### Environmental Health Sciences
 #### Mailman School of Public Health
 #### Columbia University
- <br>
+
+<br>
+ 
 Kylie is a first year Doctor of Public Health Student in the [Department of Environmental Health Sciences](https://www.mailman.columbia.edu/academics/departments/environmental-health-sciences-ehs) at [Columbia University](https://www.columbia.edu/). 
+
 <br>
 
 <img src="images/picture_reformatted.jpg" style="width:50%" ALIGN="center">
 
 <br>
+
 Kylie received a BS in Environmental Science and Technology from [University of Maryland, College Park](https://umd.edu/) in 2012 and an MPH in Environmental Health Sciences from [Mailman School of Public Health](https://www.mailman.columbia.edu/) at Columbia University in 2015.  She has worked at [Columbia Center for Children's Environmental Health](https://ccceh.org/) as a project coordinator since graduation. 
 
 <br>
-You can find her CV [here](CV.html). 
+
+You can find her CV [here](CV.html).
 
 <br>
 
