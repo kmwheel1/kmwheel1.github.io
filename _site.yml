@@ -4,7 +4,7 @@ navbar:
   title: "Home"
   right:
     - text: "CV"
-      href: CV/Wheelock_Riley_main.pdf
+      href: cv.html
     - text: "Flex Dashboard"
       href: flexdashboard.html
     - icon: fa-envelope fa-lg
