@@ -1,0 +1,49 @@
+---
+title: "Plotly"
+output: html_document
+---
+
+```{r, echo = FALSE, warning = FALSE}
+library(tidyverse)
+library(viridis)
+library(plotly)
+```
+
+##Loading in data (datasets package not working)
+```{r, warning = FALSE}
+insta_data = readr::read_csv(file = "./data/instacart.csv.zip")
+```
+
+## Line plot of fruits and vegetables by time of day
+```{r}
+fruit_veggie_time = insta_data %>%
+  select(order_dow, order_hour_of_day, product_name, aisle) %>%
+  filter(aisle %in% c("fresh fruits" , "fresh vegetables")) %>% 
+   mutate(
+    order_dow = as.factor(order_dow), 
+    order_dow  = recode(order_dow, "0" = "Sun", "1" = "Mon", "2" = "Tue", "3" = "Wed", "4" = "Thu", "5" = "Fri", "6" = "Sat")
+    ) %>%
+  group_by(order_dow, order_hour_of_day) %>% 
+  ##figure out how to get count of fruits and veggies over time for plot
+  summarize(count = n()) %>%
+  arrange(desc(count)) 
+```
+
+## Bar plot by aisle
+```{r, warning = FALSE}
+##tidying data to use for fruit aisle plot
+fruit_aisle_data = insta_data %>% 
+  select(aisle, product_name, aisle_id, product_id) %>% 
+  filter(aisle == "fresh fruits") %>% 
+  group_by(product_name) %>%
+  summarize(count = n()) %>%
+  arrange(desc(count)) %>% 
+  ##over 300 items in the fresh fruit aisle, want to look at top 10 of them
+  slice(1:10)
+
+fruit_aisle_data %>% 
+   plot_ly(x = ~product_name, y = ~count, color = ~product_name, type = "bar")
+  
+```
+
+
