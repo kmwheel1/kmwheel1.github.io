@@ -15,7 +15,7 @@ Kylie is a first year Doctor of Public Health Student in the [Department of Envi
 
 <br>
 
-<img src="images/picture_reformatted.jpg" style="width:50%" ALIGN="center">
+<img src="images/picture_reformatted.jpg" style="width:50%">
 
 <br>
 
