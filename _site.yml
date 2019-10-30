@@ -5,6 +5,8 @@ navbar:
   right:
     - text: "CV"
       href: cv.html
+    - text: "Flex Dashboard"
+      href: flexdashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:<kmw2189@cumc.columbia.edu>
     - icon: fa-github fa-lg
