@@ -4,14 +4,14 @@ output: html_document
  
 ---
 
-### DrPH Candidate
+### DrPH Student
 ### Environmental Health Sciences
 #### Mailman School of Public Health
 #### Columbia University
 
 <br>
  
-Kylie is a first year Doctor of Public Health Student in the [Department of Environmental Health Sciences](https://www.mailman.columbia.edu/academics/departments/environmental-health-sciences-ehs) at [Columbia University](https://www.columbia.edu/). 
+Kylie is a first year Doctor of Public Health Student in the [Department of Environmental Health Sciences](https://www.mailman.columbia.edu/academics/departments/environmental-health-sciences-ehs) at [Columbia University](https://www.columbia.edu/). Her research interests are prenatal and early life exposures on child health outcomes. 
 
 <br>
 
