@@ -14,22 +14,26 @@ library(plotly)
 insta_data = readr::read_csv(file = "./data/instacart.csv.zip")
 ```
 
-## Line plot of fruits and vegetables by time of day
+## Line plot of fruits and vegetables ordered per day
 ```{r}
-fruit_veggie_time = insta_data %>%
+fruit_veggie_day = insta_data %>%
   select(order_dow, order_hour_of_day, product_name, aisle) %>%
-  filter(aisle %in% c("fresh fruits" , "fresh vegetables")) %>% 
-   mutate(
+  filter(aisle %in% c("fresh fruits" , "fresh vegetables")) %>%
+  mutate(
     order_dow = as.factor(order_dow), 
-    order_dow  = recode(order_dow, "0" = "Sun", "1" = "Mon", "2" = "Tue", "3" = "Wed", "4" = "Thu", "5" = "Fri", "6" = "Sat")
-    ) %>%
-  group_by(order_dow, order_hour_of_day) %>% 
-  ##figure out how to get count of fruits and veggies over time for plot
-  summarize(count = n()) %>%
-  arrange(desc(count)) 
+    order_dow = recode(order_dow, "0" = "Sun", "1" = "Mon", "2" = "Tue", "3" = "Wed", "4" = "Thu", "5" = "Fri", "6" = "Sat")
+    ) %>% 
+  group_by(order_dow, aisle) %>% 
+  summarize(count = n()) 
+
+fruit_veggie_day %>%
+  plot_ly(
+    x = ~order_dow, y = ~count, type = "scatter", mode = "points",
+    color = ~aisle, text = ~count) %>% 
+  layout(title = "Count of Fruits and Vegetables Ordered by Day of Week")
 ```
 
-## Bar plot by aisle
+## Bar plot of frequently ordered fruits
 ```{r, warning = FALSE}
 ##tidying data to use for fruit aisle plot
 fruit_aisle_data = insta_data %>% 
@@ -42,8 +46,20 @@ fruit_aisle_data = insta_data %>%
   slice(1:10)
 
 fruit_aisle_data %>% 
-   plot_ly(x = ~product_name, y = ~count, color = ~product_name, type = "bar")
+   plot_ly(x = ~product_name, y = ~count, color = ~product_name, type = "bar") %>%
+  layout(title = "Top 10 Ordered Fruits")
   
 ```
 
+
+##Box plot of department by hour of day
+```{r}
+dept_by_hour_box = insta_data %>% 
+  select(department, order_hour_of_day) 
+  
+dept_by_hour_box %>% 
+  plot_ly(y = ~order_hour_of_day, color = ~department, type = "box",
+          colors = "Set2") %>%
+  layout(title = "Time of Orders (hour) by Grocery Department")
+```
 

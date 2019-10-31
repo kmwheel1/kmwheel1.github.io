@@ -23,11 +23,20 @@ Kylie received a BS in Environmental Science and Technology from [University of 
 
 <br>
 
+### CV
+
 You can find her CV [here](CV.html).
 
 <br>
 
+### Projects
+
+View a [flexdashboard](flex_dashboard.html) of Instacart data orders from 2017. 
+
+<br>
+
 #### Contact Information
+
 Kylie Wheelock Riley
 <br>
 [Department of Environmental Health Sciences](https://www.mailman.columbia.edu/become-student/departments/environmental-health-sciences-ehs)
