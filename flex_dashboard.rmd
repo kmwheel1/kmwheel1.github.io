@@ -59,10 +59,10 @@ fruit_veggie_day %>%
   plot_ly(
     x = ~order_dow, y = ~count, type = "scatter", mode = "points",
     color = ~aisle, text = ~count) %>% 
-  layout(title = "Count of Fruits and Vegetables Ordered by Day of Week")
+  layout(title = "Count of Fruits and Veggies Ordered by Day")
 ```
 
-### Top 10 Ordered Fruits
+### C.Top 10 Ordered Fruits
 
 This bar chart shows the counts of the 10 most popular fruits ordered in the Instacart dataset. 
 

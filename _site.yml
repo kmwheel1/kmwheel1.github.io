@@ -3,8 +3,9 @@ output_dir: "."
 navbar:
   title: "Home"
   right:
-    - icon: ai-cv ai-lg
+    - text: "CV"
       href: "CV/wheelock_riley_main.pdf"
+      external: true
     - icon: fa-chart-line fa-lg
       href: flex_dashboard.html
     - icon: fa-envelope fa-lg
@@ -16,4 +17,4 @@ navbar:
 output:
   html_document:
     theme: yeti
-    center:
+  
