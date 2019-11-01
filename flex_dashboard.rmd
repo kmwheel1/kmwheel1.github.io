@@ -62,9 +62,9 @@ fruit_veggie_day %>%
   layout(title = "Count of Fruits and Veggies Ordered by Day")
 ```
 
-### C.Top 8 Ordered Fruits
+### C.Top 5 Purchased Fruits
 
-This bar chart shows the counts of the 8 most popular fruits ordered in the Instacart dataset. 
+This bar chart shows the counts of the 5 most popular fruits purchased in the Instacart dataset. 
 
 ```{r}
 fruit_aisle_data = insta_data %>% 
@@ -73,11 +73,11 @@ fruit_aisle_data = insta_data %>%
   group_by(product_name) %>%
   summarize(count = n()) %>%
   arrange(desc(count)) %>% 
-  ##over 300 items in the fresh fruit aisle, want to look at top 10 of them (10 was too many, so changing to 8)
-  slice(1:8)
+  ##over 300 items in the fresh fruit aisle, want to look at top 10 of them (10 was too many, so changing to 5)
+  slice(1:5)
 
 fruit_aisle_data %>% 
    plot_ly(x = ~product_name, y = ~count, color = ~product_name, type = "bar") %>%
-  layout(title = "Top 8 Ordered Fruits")
+  layout(title = "Top 5 Ordered Fruits")
 
 ```
