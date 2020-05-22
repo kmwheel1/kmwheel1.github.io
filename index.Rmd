@@ -29,12 +29,6 @@ You can find her CV [here](CV.html).
 
 <br>
 
-### Projects
-
-View a [flexdashboard](flex_dashboard.html) of Instacart data orders from 2017. 
-
-<br>
-
 #### Contact Information
 
 Kylie Wheelock Riley

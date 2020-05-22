@@ -6,8 +6,6 @@ navbar:
     - text: "CV"
       href: "CV/Wheelock_Riley_main.pdf"
       external: true
-    - icon: fa-chart-line fa-lg
-      href: flex_dashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:<kmw2189@cumc.columbia.edu>
     - icon: fa-github fa-lg
